@@ -57,6 +57,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/lib/libsecril-client.so:system/lib/libsecril-client.so
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/system/lib/hw/vendor-camera.smdk4x12.so:system/lib/hw/vendor-camera.smdk4x12.so
+
+PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/usr/idc/sec_e-pen.idc:system/usr/idc/sec_e-pen.idc
 
 PRODUCT_COPY_FILES += \
