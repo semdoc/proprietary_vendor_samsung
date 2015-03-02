@@ -12,18 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := vendor/samsung/i9300
+LOCAL_PATH := vendor/samsung/t0ltecdma
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/bin/gpsd:system/bin/gpsd
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/lib/libakm.so:system/lib/libakm.so \
-    $(LOCAL_PATH)/proprietary/system/lib/libsec-ril.so:system/lib/libsec-ril.so
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/lib/hw/gps.exynos4.so:system/lib/hw/gps.exynos4.so \
-    $(LOCAL_PATH)/proprietary/system/lib/hw/sensors.smdk4x12.so:system/lib/hw/sensors.smdk4x12.so
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/usr/keylayout/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl
+    $(LOCAL_PATH)/proprietary/system/lib/libril.so:system/lib/libril.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
+    $(LOCAL_PATH)/proprietary/system/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so
